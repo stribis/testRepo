@@ -1,0 +1,290 @@
+/*
+Main stylesheet for the lician corporate website.
+Author: Martin Hutchings
+v0.1
+Last modified: 19.07.18
+License: none (public domain)
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+h1, h2, h3, h4, h5, h6, a, p, input, label{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2.6em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.5em;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+nav{
+    width: 100vw;
+    height: 8vh;
+    padding: 10px 0 10px 0;
+    background-color: rgb(0, 183, 255);
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: rgb(255, 216, 0);
+    text-decoration: underline rgb(255, 216, 0) wavy;
+}
+nav ul li img{
+    height: 6vh;
+    align-self: flex-start;
+}
+nav ul li img:hover{
+    filter: brightness(150%);
+    transform-origin: center top;
+    transform: scale(1.4) translateY(10px);
+    transition: 1s;
+    transition-timing-function: cubic-bezier(.87,-.41,.19,1.44);
+    border-radius: 5px;
+}
+
+/* Header */
+header{
+    width: 100vw;
+    height: 80vh; 
+    background: url(../video/G5Z8.gif);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header div{
+    background-color: rgba(0, 183, 255, 0.479);
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+}
+header i{
+    font-size: 3.4em;
+    color: rgb(255, 216, 0);
+    display: block;
+}
+header i:hover{
+    color: rgb(255, 229, 85);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* Brand */
+section#brand{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+section#brand section{
+    padding: 15px;
+    border-radius: 5px;
+    width: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section#brand section:hover{
+    box-shadow: 0 0 10px rgb(255, 216, 0);
+    transform: scale(1.1);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+section#brand section i{
+    font-size: 5em;
+    color: rgb(0, 183, 255);
+}
+
+/* Stories */
+section#stories{
+    color: white;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 183, 255);
+}
+#stories i{
+    font-size: 4em;
+}
+#stories i:hover{
+    color: rgb(255, 216, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#stories div{
+    margin: 0 80px 0 80px;
+}
+/* Blog */
+section#blog{
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#blog h2{
+    flex-basis: 80%;
+    text-align: center;
+    margin-top: 3%;
+}
+section#blog article{
+    display: flex;
+    flex-basis: 38%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section#blog article div{
+    width: 80%;
+    padding: 15px 15px 15px 30px;
+    align-self: flex-start;
+}
+section#blog article div h3{
+    padding-bottom: 30px;
+}
+section#blog article div p{
+    width: 80%;
+}
+section#blog article img{
+    border-radius: 5px;
+}
+section#blog article img:hover{
+    box-shadow: 0 0 15px rgb(255, 216, 0);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+/* Contact */
+section#contact {
+    height: 80vh;
+    width: 100vw;
+    background: rgb(0, 183, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+section#contact form{
+    background-color: white;
+    width:40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+form p {
+    width: 80%;
+    text-align: center;
+}
+form input:focus{
+    outline: rgb(255, 216, 0) auto 5px;
+}
+textarea:focus{
+    outline: rgb(255, 216, 0) auto 5px;
+}
+section#contact form input{
+    width: 80%;
+    height: 2.5em;
+    padding: 0 14px;
+}
+section#contact form textarea{
+    width: 80%;
+}
+.f-button{
+    width: 35% !important;
+    background: rgb(255, 216, 0) !important;
+    border: 0;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.f-button:hover{
+    background: rgb(255, 229, 85) !important;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+section#contact form div{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+hr{
+    border: 0;;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, rgb(0, 183, 255), #ccc);
+    width: 80%;
+}
+form label{
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+/* Footer */
+footer{
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+footer div{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer section ul li a, footer section h4 {
+    line-height: 1.8em;
+    color: #333;
+    text-decoration: none;
+}
+footer section ul li a:hover{
+    text-decoration: underline rgb(255, 216, 0) wavy;
+}
+footer #social-media {
+    flex-basis: 100%;
+    justify-content: center;
+    display: flex;
+}
+footer #social-media li{
+    margin: 0 20px;
+    font-size: 3em;
+}
+footer #social-media li i{
+    color: rgb(0, 183, 255);
+}
+footer #social-media li i:hover{
+    color: rgb(255, 216, 0);
+}
